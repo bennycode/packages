@@ -10,7 +10,7 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.6.2"
   },
-  "name": "ts-lerna-template",
+  "name": "@bennycode/packages",
   "private": true,
   "scripts": {
     "clean": "lerna run clean --parallel",
