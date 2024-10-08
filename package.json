@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "@tstv/eslint-config": "^3.2.2",
+    "@tstv/tsconfig-common": "^3.6.0",
+    "eslint": "^8.57.1",
+    "lefthook": "^1.7.18",
+    "lerna": "^8.1.8",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "name": "ts-lerna-template",
+  "private": true,
+  "scripts": {
+    "clean": "lerna run clean --parallel",
+    "dist": "lerna run dist",
+    "release": "npm run install && npm run dist && lerna publish && npm run clean",
+    "test": "lerna run --no-sort --concurrency 8 test"
+  },
+  "version": "2.0.0",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}
