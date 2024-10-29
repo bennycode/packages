@@ -6,12 +6,12 @@ import path from "path";
 /**
  * Creates a temporary file that is automatically deleted when exiting the application.
  * @param content - Temporary content to write into the file
- * @param cleanup - Wether the temp file should be deleted on application exit
+ * @param cleanup - Whether the temp file should be deleted upon application exit
  * @returns The file path
  */
 export function createTempFile(
   content: string = "",
-  cleanup: boolean = true,
+  cleanup: boolean = true
 ): string {
   const uuid = crypto.randomUUID();
   const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), `${uuid}-`));
