@@ -11,7 +11,7 @@ import path from "path";
  */
 export function createTempFile(
   content: string = "",
-  cleanup: boolean = true
+  cleanup: boolean = true,
 ): string {
   const uuid = crypto.randomUUID();
   const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), `${uuid}-`));
