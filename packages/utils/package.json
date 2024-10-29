@@ -6,6 +6,9 @@
   "license": "MIT",
   "main": "src/index.js",
   "name": "@bennycode/utils",
+  "peerDependencies": {
+    "vitest": "*"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -13,8 +16,9 @@
     "build": "tsc",
     "clean": "rimraf --glob src/**/*{.js,.js.map,.d.ts}",
     "dist": "npm run clean && npm run build",
-    "test": "npm run test:types",
-    "test:types": "tsc --noEmit"
+    "test": "npm run test:types && npm run test:units",
+    "test:types": "tsc --noEmit",
+    "test:units": "vitest run --passWithNoTests"
   },
   "type": "module",
   "version": "0.1.0"
