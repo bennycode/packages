@@ -2,8 +2,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@bennycode/*": ["packages/*/src"]
-    }
+      "@bennycode/*": [
+        "packages/*/src"
+      ]
+    },
   },
   "extends": "@tstv/tsconfig-common/tsconfig.json"
 }
