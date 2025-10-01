@@ -4,7 +4,7 @@
     "@tstv/tsconfig-common": "^3.6.0",
     "eslint": "^9.16.0",
     "lefthook": "^1.7.18",
-    "lerna": "^8.1.8",
+    "lerna": "^9.0.0",
     "vitest": "^3.0.4",
     "@vitest/coverage-v8": "^3.0.4",
     "prettier": "^3.3.3",
